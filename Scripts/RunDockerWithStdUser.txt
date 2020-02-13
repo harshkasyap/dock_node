@@ -1,0 +1,8 @@
+sudo setfacl -m user:student:rw /var/run/docker.sock
+
+# This commnad need to be run from cse user account
+
+# Replace username with the username reflecting in your terminal, this will help to run docker without sudo privileges in current session
+
+To verify if it is working with student account, open a new terminal
+type docker images

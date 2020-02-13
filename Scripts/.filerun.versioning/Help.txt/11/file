@@ -1,0 +1,28 @@
+To Pull an Image of Ubuntu
+docker pull ubuntu
+
+To run the ubuntu image
+docker run -it ubuntu /bin/bash
+
+To run an ubuntu container and attaching volume of Host Computer
+docker run  --name ubu -v /home/student/test:/Playground -p 8000:80 -it ubuntu /bin/bash
+
+docker run  --name ubu -v /home/student/test:/Playground -p 8001:80 -it ubuntu /bin/bash
+
+To start and attch to the same container
+docker start ubu && docker attach ubu
+
+
+docker-compose up -d
+docker-compose exec db mysql -u root -p
+
+sudo apt-get install docker-compose
+
+To Kill a port
+fuser -n tcp -k 9001 
+
+To Kill and remove containers
+docker stop conatinernameorid(even non clashing initials work) && docker rm conatinernameorid(even non clashing initials work)
+
+To remove image
+docker rmi imagenameorid -f
