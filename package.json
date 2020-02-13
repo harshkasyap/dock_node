@@ -1,0 +1,9 @@
+{
+  "name": "NodeJsApp",
+  "scripts": {
+    "start": "node web.js"
+  },
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
