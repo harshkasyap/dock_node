@@ -7,7 +7,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - ./:/home/node/app
+      - ./app:/home/node/app
     expose:
       - "8081"
     command: "npm start"
@@ -16,6 +16,6 @@ services:
 
 # Change version of node image as required
 # Expose ports which you want according to node server
-# Put the volume where you have your node codebase
+# Put the code inside app folder
 # Make sure you have npm start in your package.json
-# Maop to host port as here it is matched to 8000
+# Map to host port as here it is matched to 8000
